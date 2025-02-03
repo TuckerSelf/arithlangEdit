@@ -4,11 +4,11 @@ Exp     ::= Exp + Term
             | Exp - term
             | Term
 
-Term    ::= Term * Int
-            | Term / Int
-            | Int
+Term    ::= Term * Neg
+            | Term / Neg
+            | Neg
 
-Int     ::= - Pow
+Neg     ::= - Pow
             | Pow
 
 Pow ::= Pow ^ Factor
